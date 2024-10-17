@@ -25,6 +25,11 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
+keymap.set("n", "K", vim.lsp.buf.hover, { silent = true }) -- show documentation for what is under cursor
+
+-- gd : goto define
+-- gi : goto implement
+
 
 -- -- Normal maps
 -- f("0", "^")
