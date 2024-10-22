@@ -35,16 +35,20 @@ vim.keymap.set("n", "<RightMouse>", "<cmd>:popup mousemenu<CR>")
 vim.keymap.set("n", "<Tab>", "<cmd>:popup mousemenu<CR>")
 
 -- more good
-keymap({ "n", "o", "x" }, "<s-h>", "^", opts)
-keymap({ "n", "o", "x" }, "<s-l>", "g_", opts)
+-- keymap({ "n", "o", "x" }, "<s-h>", "^", opts)
+-- keymap({ "n", "o", "x" }, "<s-l>", "g_", opts)
 
 -- tailwind bearable to work with
 keymap({ "n", "x" }, "j", "gj", opts)
 keymap({ "n", "x" }, "k", "gk", opts)
-keymap("n", "<leader>w", ":lua vim.wo.wrap = not vim.wo.wrap<CR>", opts)
+-- keymap("n", "<leader>w", ":lua vim.wo.wrap = not vim.wo.wrap<CR>", opts)
 
+-- Tab navigation
+keymap("n", "<s-tab>", "<cmd>tabnew %<cr>", opts)
+keymap({ "n" }, "<s-h>", "<cmd>tabp<cr>", opts)
+keymap({ "n" }, "<s-l>", "<cmd>tabn<cr>", opts)
 
-vim.api.nvim_set_keymap('t', '<C-;>', '<C-\\><C-n>', opts)
+vim.api.nvim_set_keymap("t", "<C-;>", "<C-\\><C-n>", opts)
 
 
 -- =======================================================
@@ -70,8 +74,8 @@ vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) 
 vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 vim.keymap.set("n", "<leader>tc", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
-vim.keymap.set("n", "K", vim.lsp.buf.hover, { silent = true }) -- show documentation for what is under cursor
+vim.keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 
 vim.keymap.set('n', '<leader>sa', 'ggVG', { desc = 'Select all text' })
 
-vim.keymap.set("n", "<leader>nr", vim.lsp.buf.rename, {}) -- smart rename
+vim.keymap.set("n", "<leader>nr", vim.lsp.buf.rename, opts) -- smart rename

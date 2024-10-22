@@ -1,5 +1,5 @@
 local M = {
-  "NvChad/nvim-colorizer.lua",
+  "ChristianChiarulli/nvim-colorizer.lua",
   event = { "BufReadPost", "BufNewFile" },
 }
 
@@ -12,7 +12,7 @@ function M.config()
       "javascriptreact",
       "css",
       "html",
-      -- "astro",
+      "astro",
       "lua",
     },
     user_default_options = {

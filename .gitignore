@@ -39,10 +39,9 @@ luac.out
 *.x86_64
 *.hex
 
+*.DS_Store
 
 plugin/packer_compiled.lua
 java-debug/
 vscode-java-test/
 lazy-lock.json
-
-*.DS_Store
