@@ -12,7 +12,7 @@ function M.config()
       "javascriptreact",
       "css",
       "html",
-      "astro",
+      -- "astro",
       "lua",
     },
     user_default_options = {

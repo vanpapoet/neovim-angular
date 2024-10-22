@@ -1,9 +1,11 @@
-local M = {
-  "LunarVim/breadcrumbs.nvim",
-}
+-- local M = {
+--   "LunarVim/breadcrumbs.nvim",
+-- }
 
-function M.config()
-  require("breadcrumbs").setup()
-end
+-- function M.config()
+--   require("breadcrumbs").setup()
+-- end
 
-return M
+-- return M
+
+return {}

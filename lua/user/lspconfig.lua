@@ -70,11 +70,11 @@ function M.config()
     "cssls",
     "html",
     "ts_ls",
-    -- "eslint",
-    "pyright",
+    -- "pyright",
     "bashls",
     "jsonls",
     -- "yamlls",
+    "eslint",
   }
 
   local default_diagnostic_config = {

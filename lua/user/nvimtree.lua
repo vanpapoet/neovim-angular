@@ -1,6 +1,6 @@
 local M = {
   "nvim-tree/nvim-tree.lua",
-  event = "VeryLazy",
+  -- event = "VeryLazy",
 }
 
 function M.config()
@@ -12,7 +12,7 @@ function M.config()
   local icons = require "user.icons"
 
   require("nvim-tree").setup {
-    hijack_netrw = false,
+    -- hijack_netrw = false,
     sync_root_with_cwd = true,
     view = {
       relativenumber = true,

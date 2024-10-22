@@ -1,7 +1,7 @@
 local M = {
   "nvim-lualine/lualine.nvim",
   dependencies = {
-    "AndreM222/copilot-lualine",
+    -- "AndreM222/copilot-lualine",
   },
 }
 
